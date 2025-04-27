@@ -1,0 +1,73 @@
+*{
+    overflow-x: hidden;
+}
+.containerExterno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/pexels-nejc-kosir-108379-338936.jpg");
+    background-size: auto;
+    background-position: center;
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    gap: 4rem;
+}
+
+.containerInterno {
+    background-color: rgb(217, 212, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(217, 212, 212);
+    border-radius: 1rem;
+    width: clamp(30rem, 50vw, 40rem);
+    height: 30vh;
+}
+
+.titulo {
+    text-align: center;
+    font-size: clamp(1.9rem, 3vw, 4rem);
+    color: blue;
+    text-shadow: 
+    2px 2px 0px white, /* Sombra à direita e abaixo da letra */
+    -2px -2px 0px white, /* Sombra à esquerda e acima da letra */
+    2px -2px 0px white, /* Sombra à direita e acima da letra */
+    -2px 2px 0px white; /* Sombra à esquerda e abaixo da letra */
+
+}
+
+.tituloInput {
+    background-color: rgb(217, 212, 212);
+    display: flex;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    height: 10vh;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    width: 12rem;
+    height: 2.2rem;
+    font-size: 1.3rem;
+}
+
+.botao{
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2.2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
