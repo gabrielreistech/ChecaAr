@@ -1,0 +1,18 @@
+.containerExterno{
+    display: flex;
+    background-color: rgb(217, 212, 212);
+    width: clamp(30rem, 50vw, 40rem);
+    height: 30vh;
+    border: 1px solid rgb(217, 212, 212);
+    border-radius: 1rem;
+}
+.containerInterno{
+    font-size: 1.2rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}

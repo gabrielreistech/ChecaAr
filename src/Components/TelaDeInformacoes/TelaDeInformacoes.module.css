@@ -1,0 +1,30 @@
+.containerExterno{
+    overflow-y: hidden;
+    display: flex;
+    background-color: rgb(217, 212, 212);
+    width: clamp(30rem, 50vw, 40rem);
+    height: auto;
+    border: 1px solid rgb(217, 212, 212);
+    border-radius: 1rem;
+}
+.containerInterno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    gap: 0.2rem;
+}
+.titulo{
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 0.3rem;
+}
+.informacoes{
+    font-size: 1.5rem;
+}
+
+.componentes{
+    font-size: 1.5rem;
+}
