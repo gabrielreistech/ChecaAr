@@ -1,54 +1,24 @@
-# React + TypeScript + Vite
+# ChecaAr - Monitoramento de Qualidade do Ar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ChecaAr** é um projeto desenvolvido em **TypeScript** e **Vite** que permite consultar a qualidade do ar de uma localidade com base no **CEP** fornecido. O projeto utiliza a **Brasil API CEPv2** para obter os dados de localização (cidade, rua, latitude e longitude) e, em seguida, usa a API **OpenWeather** para consultar o índice de poluição do ar (AQI - Air Quality Index) com base nas coordenadas geográficas obtidas.
 
-Currently, two official plugins are available:
+## Como funciona
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ 1. **Consulta de CEP**: O usuário insere um **CEP** válido.
+2. **Obtenção de coordenadas**: Através da **Brasil API CEPv2**, o sistema busca os dados de latitude e longitude.
+3. **Consulta de poluição do ar**: Com as coordenadas geográficas, o sistema consulta a API **OpenWeather** para obter informações sobre a qualidade do ar, incluindo o índice de poluição (AQI) e os níveis de vários poluentes (CO, NO, NO2, O3, SO2, PM2.5, PM10, NH3).
 
-## Expanding the ESLint configuration
+## Tecnologias usadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **TypeScript**: Para garantir um código robusto e tipado.
+- **React**: Para construção da interface do usuário.
+- **Vite**: Para bundling e otimização do desenvolvimento.
+- **Axios**: Para realizar as requisições HTTP às APIs.
+- **Brasil API CEPv2**: Para buscar dados de CEPs brasileiros.
+- **OpenWeather API**: Para obter dados de poluição do ar com base na latitude e longitude.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Acesse o projeto
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+O projeto já está disponível para uso! Você pode acessá-lo no seguinte link de deploy:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+[**ChecaAr - Monitoramento de Qualidade do Ar**](https://checa-ar.vercel.app/)
