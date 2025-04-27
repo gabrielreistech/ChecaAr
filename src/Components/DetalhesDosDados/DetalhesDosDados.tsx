@@ -25,9 +25,9 @@ const DetalhesDosDados = () => {
                             <br />
                             <li><strong>5 – Muito Ruim:</strong> Toda a população pode sentir efeitos nocivos à saúde.</li>
                         </ul>
-                            <br />
+                        <br />
                         <p><em>*Consulte escalas específicas do Reino Unido, Europa, EUA ou China Continental para comparações mais detalhadas.*</em></p>
-                            <br />  
+                        <br />
                     </article>
 
                     <article>
@@ -35,57 +35,58 @@ const DetalhesDosDados = () => {
                         <br />
                         <p>Os valores são apresentados em <strong>μg/m³</strong> (microgramas por metro cúbico).</p>
                         <br />
-                        <table border="1" cellpadding="6" cellspacing="0">
+                        <table style={{ border: '1px solid black', borderCollapse: 'collapse' }}>
                             <thead>
                                 <tr>
-                                    <th>Componente</th>
-                                    <th>Significado</th>
-                                    <th>Efeito Comum</th>
+                                    <th style={{ border: '1px solid black', padding: '6px' }}>Componente</th>
+                                    <th style={{ border: '1px solid black', padding: '6px' }}>Significado</th>
+                                    <th style={{ border: '1px solid black', padding: '6px' }}>Efeito Comum</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>CO</strong></td>
-                                    <td>Monóxido de carbono</td>
-                                    <td>Reduz a quantidade de oxigênio no sangue; perigoso em ambientes fechados.</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}><strong>CO</strong></td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Monóxido de carbono</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Reduz a quantidade de oxigênio no sangue; perigoso em ambientes fechados.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>NO</strong></td>
-                                    <td>Monóxido de nitrogênio</td>
-                                    <td>Gás precursor de poluentes como o NO₂.</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}><strong>NO</strong></td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Monóxido de nitrogênio</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Gás precursor de poluentes como o NO₂.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>NO₂</strong></td>
-                                    <td>Dióxido de nitrogênio</td>
-                                    <td>Irritante respiratório; causa problemas pulmonares.</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}><strong>NO₂</strong></td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Dióxido de nitrogênio</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Irritante respiratório; causa problemas pulmonares.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>O₃</strong></td>
-                                    <td>Ozônio</td>
-                                    <td>Prejudicial em baixas altitudes; irrita olhos e pulmões.</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}><strong>O₃</strong></td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Ozônio</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Prejudicial em baixas altitudes; irrita olhos e pulmões.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>SO₂</strong></td>
-                                    <td>Dióxido de enxofre</td>
-                                    <td>Irrita as vias respiratórias; causa chuva ácida.</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}><strong>SO₂</strong></td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Dióxido de enxofre</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Irrita as vias respiratórias; causa chuva ácida.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>PM2.5</strong></td>
-                                    <td>Partículas finas</td>
-                                    <td>Penetram nos pulmões e corrente sanguínea; muito perigosas.</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}><strong>PM2.5</strong></td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Partículas finas</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Penetram nos pulmões e corrente sanguínea; muito perigosas.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>PM10</strong></td>
-                                    <td>Partículas inaláveis</td>
-                                    <td>Irritam olhos, nariz e garganta.</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}><strong>PM10</strong></td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Partículas inaláveis</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Irritam olhos, nariz e garganta.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>NH₃</strong></td>
-                                    <td>Amônia</td>
-                                    <td>Pode causar irritações e problemas respiratórios.</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}><strong>NH₃</strong></td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Amônia</td>
+                                    <td style={{ border: '1px solid black', padding: '6px' }}>Pode causar irritações e problemas respiratórios.</td>
                                 </tr>
                             </tbody>
                         </table>
+
                     </article>
                     <br />
                     <p><strong>💡 Dica:</strong> Evite atividades ao ar livre em dias com qualidade do ar ruim. A exposição contínua pode afetar sua saúde a longo prazo.</p>
