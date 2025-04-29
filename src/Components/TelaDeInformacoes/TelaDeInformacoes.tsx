@@ -20,8 +20,8 @@ const TelaDeInformacoes: React.FC<TelaDeInformacoesProps> = ({ cidade, rua, aqi,
                 <h3 className={styles.titulo}>Nível de AQI:</h3>
                 <p className={styles.informacoes}>{aqi}</p>
 
-                <h3 className={styles.titulo}>Qualidade do Ar</h3>
-                <p className={styles.informacoes}><strong>Status da Qualidade do Ar:</strong> {poluicao}</p>
+                <h3 className={styles.titulo}>Status da qualidade do ar:</h3>
+                <p className={styles.informacoes}>{poluicao}</p>
                 <h4 className={styles.titulo}>Componentes de Poluição:</h4>
                 {componentePoluicao.map((componente, index) => (
                     <div key={index} className={styles.componentes}>
