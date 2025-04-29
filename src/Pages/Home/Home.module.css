@@ -23,7 +23,7 @@
     align-items: center;
     border: 1px solid rgb(217, 212, 212);
     border-radius: 1rem;
-    width: clamp(30rem, 50vw, 40rem);
+    width: clamp(25rem, 50vw, 40rem);
     height: 30vh;
 }
 
@@ -44,7 +44,7 @@
     display: flex;
     margin-top: 1rem;
     text-align: center;
-    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     height: 10vh;
 }
 
