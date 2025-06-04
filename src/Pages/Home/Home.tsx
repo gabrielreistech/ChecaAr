@@ -4,7 +4,7 @@ import axios from "axios";
 import TelaDeInformacoes from "../../Components/TelaDeInformacoes/TelaDeInformacoes";
 import TelaDeErro from "../../Components/TelaDeErro/TelaDeErro";
 import DetalhesDosDados from "../../Components/DetalhesDosDados/DetalhesDosDados";
-import Carregando from "../../Components/Carregando/carregando";
+import Carregando from "../../Components/Carregando/Carregando";
 
 const Home = () => {
 
