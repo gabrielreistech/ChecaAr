@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 import styles from "./Home.module.css";
 import axios from "axios";
 import TelaDeInformacoes from "../../Components/TelaDeInformacoes/TelaDeInformacoes";
@@ -19,8 +19,16 @@ const Home = () => {
   const [componentePoluicao, setComponentPoluicao] = useState<{ name: string; value: string }[]>([]);
   const [nivelAqi, setNivelAqi] = useState<number>(0);
   const [effectPoluicao, setEffectPoluicao] = useState<boolean>(false);
+  const [carregando, setCarregando] = useState<boolean>(false);
 
   const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY;
+
+  useEffect(() =>{
+    setCarregando(true);
+    setTimeout(() =>{
+      setCarregando(false);
+    }, 2500);
+  }, [])
 
   const onSubmit = (event: React.FormEvent) => {
     event.preventDefault();
