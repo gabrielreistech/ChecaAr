@@ -1,9 +1,10 @@
-import { use, useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 import styles from "./Home.module.css";
 import axios from "axios";
 import TelaDeInformacoes from "../../Components/TelaDeInformacoes/TelaDeInformacoes";
 import TelaDeErro from "../../Components/TelaDeErro/TelaDeErro";
 import DetalhesDosDados from "../../Components/DetalhesDosDados/DetalhesDosDados";
+import Carregando from "../../Components/Carregando/carregando";
 
 const Home = () => {
 
@@ -158,6 +159,9 @@ const Home = () => {
   }, [effectPoluicao, latitude, longitude]);
 
   return (
+    carregando ? (
+      <Carregando />
+    ):(
     <div className={styles.containerExterno}>
       <h1 className={styles.titulo}>Seja muito bem-vindo(a) ao ChecaAr</h1>
       <div className={styles.containerInterno}>
@@ -181,6 +185,7 @@ const Home = () => {
         <TelaDeErro erro={erro} />
       }
     </div>
+    )
   );
 }
 
