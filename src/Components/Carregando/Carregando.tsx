@@ -1,4 +1,4 @@
-import Styles from "./carregando.module.css"
+import Styles from "./Carregando.module.css";
 
 export default function Carregando() {
     return (
