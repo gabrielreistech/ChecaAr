@@ -7,8 +7,11 @@
   
   .loader {
     display: flex;
-    justify-content: space-between;
-    width: 80px;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 24px; 
+    width: 120px; 
+    height: 30px;
   }
   
   .loader div {
@@ -17,6 +20,7 @@
     background-color: #FF5C35;
     border-radius: 50%;
     animation: grow-shrink 1.5s infinite;
+    transform-origin: center;
   }
   
   .loader div:nth-child(1) {
@@ -36,6 +40,6 @@
       transform: scale(1);
     }
     50% {
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
   }

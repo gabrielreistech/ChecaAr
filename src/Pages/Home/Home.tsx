@@ -6,6 +6,7 @@ import TelaDeErro from "../../Components/TelaDeErro/TelaDeErro";
 import DetalhesDosDados from "../../Components/DetalhesDosDados/DetalhesDosDados";
 import Carregando from "../../Components/Carregando/Carregando";
 
+
 const Home = () => {
 
   const [cep, setCep] = useState<string>('');
